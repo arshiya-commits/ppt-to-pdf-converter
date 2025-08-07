@@ -1,10 +1,35 @@
-# PPTX to PDF Converter
+# 📄 PPT to PDF Converter using Python
 
-This script uses comtypes  to convert PowerPoint files to PDF.
+This project converts a PowerPoint (.pptx) file to a PDF using Python on **Windows**, fulfilling the following task requirements:
 
-## Setup
+-  Convert `.pptx` to `.pdf` using Python
+-  Ensure the file is **not corrupted** during conversion
+-  Use only libraries installable via **pip** (no external tools like `brew`)
+-  Maintain a `requirements.txt` file for dependencies
 
-```bash
-python -m venv venv
-venv\Scripts\activate
+---
+
+## 🔧 Tech Stack
+
+- **Python 3.x**
+- **comtypes** (Windows-only, via `pip`)
+- **Microsoft PowerPoint (required)**
+
+---
+
+## 📦 Installation
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/your-username/ppt-to-pdf-converter.git
+   cd ppt-to-pdf-converter
+Install dependencies
 pip install -r requirements.txt
+
+Usage:
+place your.pptx file in the project directory
+run the script:
+python convert.py
+
+
+
