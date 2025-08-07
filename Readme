@@ -1,40 +1,36 @@
-# 📄 PPT to PDF Converter (Python + comtypes) – Windows Only
+# 📄 PPT to PDF Converter – Python + comtypes (Windows Only)
 
-This project allows you to convert `.pptx` (PowerPoint) files into `.pdf` format using Python, **without corrupting the original content**. It uses only libraries installable via `pip`, fulfilling all task constraints.
+A lightweight and reliable tool to convert `.pptx` files to `.pdf` using Python.  
+No content corruption. No external tools. Just pure Python and `pip` installable libraries.
 
-## ✅ Project Requirements
-- 🔁 Convert `.pptx` to `.pdf` using Python
-- 🔐 Ensure files are **not corrupted** during conversion
-- 📦 Use only libraries installable with `pip` (no system tools like `brew`)
-- 📄 Maintain a `requirements.txt` for all dependencies
+---
+
+## ✅ Features
+
+- 🔁 Convert PowerPoint `.pptx` files to PDF format
+- 🔒 Ensures the output PDF is not corrupted
+- 📦 Uses only `pip` installable libraries (no third-party software)
+- 📄 Clean and simple script
+- 🪟 **Works only on Windows** (requires Microsoft PowerPoint)
+
+---
 
 ## 🛠️ Tech Stack
 
-| Tool               | Purpose                              |
-|--------------------|--------------------------------------|
-| Python 3.x         | Programming Language                 |
-| comtypes (via pip) | Windows COM interface for PowerPoint |
-| Microsoft PowerPoint | Required for backend automation     |
+| Tool                 | Description                                  |
+|----------------------|----------------------------------------------|
+| Python 3.x           | Programming language                         |
+| `comtypes` (via pip) | Windows COM interface to automate PowerPoint |
+| Microsoft PowerPoint | Required backend engine                      |
 
 ---
 
 ## 📥 Installation
 
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/your-username/ppt-to-pdf-converter.git
-   cd ppt-to-pdf-converter
-Install dependencies:
+```bash
+# Step 1: Clone the repository
+git clone https://github.com/your-username/ppt-to-pdf-converter.git
+cd ppt-to-pdf-converter
+
+# Step 2: Install dependencies
 pip install -r requirements.txt
------
-
-## Project structure
-
-ppt-to-pdf-converter/
-├── convert.py           # Main conversion script
-├── requirements.txt     # Dependencies (pip-installable)
-├── sample.pptx          # (Optional) Demo input file
-├── output.pdf           # Output generated after script runs
-└── README.md            # Project documentation
-
-
