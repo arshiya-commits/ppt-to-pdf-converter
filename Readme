@@ -7,7 +7,7 @@ No content corruption. No external tools. Just pure Python and `pip` installable
 
 ## ✅ Features
 
-- 🔁 Convert PowerPoint `.pptx` files to PDF format
+- 🔁 Convert PowerPoint `.pptx` files to PDF formats
 - 🔒 Ensures the output PDF is not corrupted
 - 📦 Uses only `pip` installable libraries (no third-party software)
 - 📄 Clean and simple script
@@ -34,3 +34,17 @@ cd ppt-to-pdf-converter
 
 # Step 2: Install dependencies
 pip install -r requirements.txt
+
+#project Structure
+
+ppt-to-pdf-converter/
+│
+├── convert.py           # Main Python script
+├── requirements.txt     # All pip dependencies
+├── sample.pptx          # Example PowerPoint file
+└── README.md            # Project documentation
+
+Notes:
+
+This script works only on Windows, as it uses Windows COM automation via PowerPoint.
+Does not work on macOS or Linux, even with comtypes.
