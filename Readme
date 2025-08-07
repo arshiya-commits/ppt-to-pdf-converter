@@ -1,35 +1,40 @@
-# 📄 PPT to PDF Converter using Python
+# 📄 PPT to PDF Converter (Python + comtypes) – Windows Only
 
-This project converts a PowerPoint (.pptx) file to a PDF using Python on **Windows**, fulfilling the following task requirements:
+This project allows you to convert `.pptx` (PowerPoint) files into `.pdf` format using Python, **without corrupting the original content**. It uses only libraries installable via `pip`, fulfilling all task constraints.
 
--  Convert `.pptx` to `.pdf` using Python
--  Ensure the file is **not corrupted** during conversion
--  Use only libraries installable via **pip** (no external tools like `brew`)
--  Maintain a `requirements.txt` file for dependencies
+## ✅ Project Requirements
+- 🔁 Convert `.pptx` to `.pdf` using Python
+- 🔐 Ensure files are **not corrupted** during conversion
+- 📦 Use only libraries installable with `pip` (no system tools like `brew`)
+- 📄 Maintain a `requirements.txt` for all dependencies
+
+## 🛠️ Tech Stack
+
+| Tool               | Purpose                              |
+|--------------------|--------------------------------------|
+| Python 3.x         | Programming Language                 |
+| comtypes (via pip) | Windows COM interface for PowerPoint |
+| Microsoft PowerPoint | Required for backend automation     |
 
 ---
 
-## 🔧 Tech Stack
-
-- **Python 3.x**
-- **comtypes** (Windows-only, via `pip`)
-- **Microsoft PowerPoint (required)**
-
----
-
-## 📦 Installation
+## 📥 Installation
 
 1. **Clone the repository:**
    ```bash
    git clone https://github.com/your-username/ppt-to-pdf-converter.git
    cd ppt-to-pdf-converter
-Install dependencies
+Install dependencies:
 pip install -r requirements.txt
+-----
 
-Usage:
-place your.pptx file in the project directory
-run the script:
-python convert.py
+## Project structure
 
+ppt-to-pdf-converter/
+├── convert.py           # Main conversion script
+├── requirements.txt     # Dependencies (pip-installable)
+├── sample.pptx          # (Optional) Demo input file
+├── output.pdf           # Output generated after script runs
+└── README.md            # Project documentation
 
 
